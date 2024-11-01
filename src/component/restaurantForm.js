@@ -23,7 +23,6 @@ const RestaurantForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Basic validation
     if (
       !formData.name ||
       !formData.address ||
@@ -43,7 +42,7 @@ const RestaurantForm = () => {
       const response = await axios.post(
         "http://127.0.0.1:8000/api/listview/",
         formData
-      ); // Replace with your API endpoint
+      ); 
       setSuccessMessage("Restaurant added successfull");
       setFormData({
         name: "",
