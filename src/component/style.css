@@ -1,0 +1,9 @@
+.data{
+    background-color: red;
+    height: 200px;
+    width: 400px;
+    text-align: center;
+}
+.data h1{
+    text-decoration:underline;
+}
